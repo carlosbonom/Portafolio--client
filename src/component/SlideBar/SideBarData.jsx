@@ -1,17 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHome, faUserAlt, faBriefcase, faCog, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faBriefcase, faCog, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 export const SideBarData = [
     {
         title:"Inicio",
         path:'/',
         icon:<FontAwesomeIcon icon={faHome} />,
-    },
-    {
-        title:"Sobre mi",
-        path:'/about',
-        icon:<FontAwesomeIcon icon={faUserAlt} />,
     },
     {
         title:"Proyectos",

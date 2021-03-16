@@ -6,7 +6,7 @@ import Contact from './component/Contact/Contact';
 import Skill from './component/Skill/Skill';
 import Portafolio from './component/Portafolio/Portafolio';
 import ParticlesBg from 'particles-bg';
-import About from './component/About/About';
+
 
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
           <Route exact path='/contact' render={()=> <Contact />} />
           <Route exact path='/skill' render={()=><Skill />} />
           <Route exact path='/proyect' render={()=> <Portafolio />} />
-          <Route exact path='/about' render={()=><About />} />
         </Switch>
         <SideBar />
         <ParticlesBg color="#3282b8" num={90} type="cobweb" bg={true} />
