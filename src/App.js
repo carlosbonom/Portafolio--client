@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router,Route , Switch } from "react-router-dom";
+import SideBar from './component/SlideBar/SideBar';
+import Home from './component/Home/Home'
+import Contact from './component/Contact/Contact';
+import Skill from './component/Skill/Skill';
+import Portafolio from './component/Portafolio/Portafolio';
+import ParticlesBg from 'particles-bg';
+import About from './component/About/About';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path='/' render={()=> <Home />} />
+          <Route exact path='/contact' render={()=> <Contact />} />
+          <Route exact path='/skill' render={()=><Skill />} />
+          <Route exact path='/proyect' render={()=> <Portafolio />} />
+          <Route exact path='/about' render={()=><About />} />
+        </Switch>
+        <SideBar />
+        <ParticlesBg color="#3282b8" num={90} type="cobweb" bg={true} />
+      </Router>
+    </>
   );
 }
 

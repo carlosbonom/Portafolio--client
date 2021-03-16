@@ -1,0 +1,79 @@
+.home{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.home .HomeName{
+    color: #bbe1fa;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.4vw;
+    background-color: #3282b8;
+    margin-bottom: 1vw;
+    font-size: 7.5vw;
+    position: relative;
+    animation: text 3s 1;
+}
+.home .text2{
+    color: #bbe1fa;
+    text-transform: uppercase;
+    display: block;
+    font-size: 4.5vw;
+    
+}
+@keyframes text{
+    0%{
+        color:#1b262c;
+        margin-bottom: -5vw;
+    }
+    30%{
+        letter-spacing: 1.25vw;
+        margin-bottom: -5vw;
+    }
+    85%{
+        letter-spacing: 0.4vw;
+        margin-bottom: -5vw;
+    }
+
+}
+
+
+.homeIcon{
+    font-size: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 90vh;
+    
+}
+
+.icon{
+    color:#bbe1fa;
+    animation: text2 3s 1
+}
+
+@keyframes text2{
+    0%{
+        color:#1b262c;
+        font-size: 0;
+    }
+    85%{
+        font-size: 80px;
+    }
+
+}
+
+.icon:hover{
+    color: #74c2f5;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeIcon{
+        height: 70vh;
+    }
+}

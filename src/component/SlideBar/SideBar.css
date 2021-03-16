@@ -1,0 +1,95 @@
+
+.navMenu{
+    background-color:#1F2C33;
+    height: 100vh;
+    justify-content: center;
+    position:fixed;
+    lefT: 0;
+    top: 0;
+    right: auto;
+    bottom: 0;
+}
+
+.itemBars{
+    display: flex;
+    justify-content:  flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.itemBars a{
+    text-decoration: none;
+    color: #bbe1fa;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+@media all and (min-width: 600px){
+
+    .sideBar:hover + .navMenu{
+        transition: 350ms;
+        display: block;
+    }
+    .navMenu:hover{
+        display: block;
+    }
+    
+    .itemBars a:hover{
+        background-color: #3282b8;
+    }
+    .navMenuItems:hover span{
+        display: block;
+    }
+    
+}
+
+
+.navMenuItems{
+    padding: 0;
+    width: 100%;
+}
+
+
+.navTitle{
+    display: none;
+    margin-left: 16px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .navMenu{
+        position: absolute;
+        left:0;
+        bottom:0;
+        
+}
+    .navMenuItems {
+        background-color:#1F2C33;
+        position: fixed;
+        list-style-type: none;
+        overflow: hidden;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+       }
+       
+       
+       .itemBars {
+        float: left;
+        
+       }
+       .itemBars{
+           padding: 0;
+       }
+       
+}
