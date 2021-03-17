@@ -15,7 +15,6 @@
     width:23rem;
     text-align: center;
     cursor: pointer;
-    opacity:75%;
 }
 .containerProyect:hover{
   opacity: 100%;
