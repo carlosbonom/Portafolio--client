@@ -16,9 +16,7 @@
     text-align: center;
     cursor: pointer;
 }
-.containerProyect:hover{
-  opacity: 100%;
-}
+
 
 .logo{
     width: 70px;
